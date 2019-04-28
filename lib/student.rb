@@ -9,6 +9,10 @@ attr_reader :id
     @grade = grade
   end
 
+  def self.create_table
+    
+  end
+
   def save
   end
 
