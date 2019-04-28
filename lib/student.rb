@@ -35,7 +35,7 @@ attr_reader :id
     INSERT INTO students(name, grade) VALUES (self.name, self.grade)
     SQL
     )
-    DB[:conn].execute()
+    DB[:conn].execute(SELECT LAST CREATED ROWid() )
   end
 
   def create
