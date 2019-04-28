@@ -11,7 +11,10 @@ attr_reader :id
   end
 
   def save
+  end
 
+  def create
+    
   end
 
 end
