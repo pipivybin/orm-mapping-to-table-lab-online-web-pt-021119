@@ -14,7 +14,7 @@ attr_reader :id
   end
 
   def create
-    
+
   end
 
 end
