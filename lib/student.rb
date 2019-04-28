@@ -35,6 +35,7 @@ attr_reader :id
     INSERT INTO students(name, grade) VALUES (self.name, self.grade)
     SQL
     )
+    DB[:conn].execute()
   end
 
   def create
