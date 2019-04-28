@@ -10,7 +10,7 @@ attr_reader :id
   end
 
   def self.create_table
-    
+    DB[:con].execute
   end
 
   def save
