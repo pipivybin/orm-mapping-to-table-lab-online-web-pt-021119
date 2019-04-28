@@ -10,4 +10,8 @@ attr_reader :id
     @id = id
   end
 
+  def save
+
+  end
+
 end
