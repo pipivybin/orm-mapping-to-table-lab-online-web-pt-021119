@@ -12,7 +12,7 @@ attr_reader :id
   def self.create_table
     DB[:conn].execute(
     <<-SQL
-    CREATE TABLE students IF DOES NOT EXIST (
+    CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade TEXT
