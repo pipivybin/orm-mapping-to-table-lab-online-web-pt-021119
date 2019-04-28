@@ -8,7 +8,6 @@ attr_reader :id
     @name = name
     @grade = grade
     @id = id
-
   end
 
 end
