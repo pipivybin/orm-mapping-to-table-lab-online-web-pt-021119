@@ -21,6 +21,14 @@ attr_reader :id
     )
   end
 
+  def self.drop_table
+    DB[:conn].execute(
+    <<-SQL
+    
+    SQL
+    )
+  end
+
   def save
   end
 
