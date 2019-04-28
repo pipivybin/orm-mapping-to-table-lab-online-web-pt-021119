@@ -10,7 +10,15 @@ attr_reader :id
   end
 
   def self.create_table
-    DB[:con].execute
+    DB[:conn].execute(
+    <<-SQL
+    CREATE TABLE students IF DOES NOT EXIST (
+      id INTEGER PRIMARY KEY,
+      name TEXT,
+      grade TEXT
+    )
+    SQL
+    )
   end
 
   def save
